@@ -1,0 +1,108 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Container for centering the content */
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Card style */
+#card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+#card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading style */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input field style */
+.input-container {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+/* Input focus effect */
+input:focus {
+    border: 2px solid #4CAF50;
+}
+
+/* Button style */
+button {
+    padding: 14px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Output message style */
+#output {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+#output.error {
+    color: #d9534f;
+}
+
+#output.success {
+    color: #5bc0de;
+}
